@@ -1,6 +1,6 @@
 # Vars
 
-## `$TM_FILENAME_BASE$`
+### `$TM_FILENAME_BASE$`
 
 `capitalize(camelCase(fileNameWithoutExtension()))`
 
