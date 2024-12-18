@@ -32,6 +32,34 @@ export const $TM_FILENAME_BASE$: FC<$TM_FILENAME_BASE$Props> = memo(function $TM
 
 ```
 
+### rsq
+
+```typescript jsx
+import type { QwikIntrinsicElements } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
+import css from './$TM_FILENAME_BASE$.module.css';
+import classNames from 'classnames';
+
+
+export type $TM_FILENAME_BASE$Props =
+    QwikIntrinsicElements['div']
+    & {};
+
+export const $TM_FILENAME_BASE$ = component$((props: $TM_FILENAME_BASE$Props) => {
+    const { ...other } = props;
+
+    return (
+        <div
+            { ...other }
+            class={ classNames(css.container, {}, [ props.class ]) }
+        >
+            $TM_FILENAME_BASE$
+        </div>
+    );
+});
+```
+
+
 ## Types
 
 ### `tg`
